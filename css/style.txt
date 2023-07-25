@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+* {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  margin: 0 20%;
+}
+
+.nav {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  background-color: black;
+  justify-content: space-between;
+  align-items: center
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+.nav li {
+  margin-right: 30px;
+}
+
+.nav a {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.nav a:hover {
+  color: #FEBC59;
+  cursor: pointer;
+}
+
+.intro {
+  width: 100%;
+  height: 680px;
+  background-image: url('../img/bg-intro.png');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro p {
+  padding: 0 20px;
+  text-align: center;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.historia-titulo {
+  width: 100%;
+  height: 120px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.historia-titulo h2 {
+  color: #FEBC59;
+}
+
+.historia-titulo h2::after,
+.historia-titulo h2::before {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 2px;
+  margin: 20px auto;
+  text-align: center;
+  background: #FEBC59;
+}
+
+.historia {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1em;
+  gap: 0 50px;
+}
+
+.historia img {
+  width: 400px;
+  border-radius: 10px;
+}
+
+.planos-titulo {
+  width: 100%;
+  background-color: #000;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 80px 0;
+}
+
+.planos-titulo h2 {
+  color: #FEBC59;
+}
+
+.planos-titulo h2::after,
+.planos-titulo h2::before {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 2px;
+  margin: 20px auto;
+  text-align: center;
+  background: #FEBC59;
+}
+
+.plano-bg {
+  background-color: #2D2D2D;
+}
+
+
+.planos div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 50px;
+  font-size: 1em;
+  margin-bottom: 80px;
+}
+
+.planos:last-child {
+  background: yellowgreen;
+}
+
+.planos img {
+  width: 400px;
+  border-radius: 10px;
+
+}
+
+.planos ul {
+  width: 50%;
+}
+
+.planos ul li {
+  color: #d3d3d3;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9em;
+  font-weight: normal;
+  line-height: 1.9em;
+}
+
+.hr {
+  display: block;
+  height: 1px;
+  margin-bottom: 80px;
+  background: rgba(254, 188, 89, 0.20);
+}
+
+.contato-titulo {
+  width: 100%;
+  height: 120px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.contato-titulo h2 {
+  color: #FEBC59;
+}
+
+.contato-titulo h2::after,
+.contato-titulo h2::before {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 2px;
+  margin: 20px auto;
+  text-align: center;
+  background: #FEBC59;
+}
+
+
+/* Footer */
+
+.footer {
+  width: 100%;
+  height: 100px;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer p {
+  text-align: center;
+  color: #fff;
+}
+
+.footer-icons {
+  display: inline-block;
+  width: 50%;
+}
+
+
+
+
+/* BreakPoints */
+
+
+/* Tablet */
+
+
+/* Smartphone */
+
+@media (max-width: 600px) {
+  .container {
+    margin: 0;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 25px 0;
+  }
+
+
+}

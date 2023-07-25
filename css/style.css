@@ -54,7 +54,7 @@
 }
 
 .intro p {
-  width: 50%;
+  padding: 0 20px;
   text-align: center;
   color: #fff;
   font-size: 1.2rem;
@@ -210,4 +210,50 @@
 .footer-icons {
   display: inline-block;
   width: 50%;
+}
+
+
+
+
+/* BreakPoints */
+
+
+/* Tablet */
+
+
+/* Smartphone */
+
+@media (max-width: 768px) {
+  .container {
+    margin: 0;
+  }
+
+  .nav {
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px 0;
+  }
+
+  .historia {
+    font-size: 0.8em;
+    margin: 0 40px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .historia p {
+    margin-bottom: 20px;
+  }
+
+  .planos div {
+    flex-direction: column;
+  }
+
+  .planos div:last-child {
+    background-color: transparent;
+  }
+
+  img {
+    max-width: 300px;
+  }
 }

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StrongGym</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <nav class="nav ">
+    <a class="container" href="#"><img src="./img/Logo.png" alt="Logo StrongGym"></a>
+    <ul class="container">
+      <li><a href="#sobre"> Sobre</a></li>
+      <li> <a href="#planos">Planos</a> </li>
+      <li><a href="#contato"> Contato</a></li>
+    </ul>
+  </nav>
+  <div class="intro">
+    <p>"Unidos pela força interior, capacitados pelo esforço mútuo, na STRONG GYM transformamos sonhos em realidade."</p>
+  </div>
+  <article id="sobre">
+    <div class="historia-titulo">
+      <h2>Nossa História</h2>
+    </div>
+    <div class="historia container">
+      <p>A STRONGGYM foi fundada em 2014 por três amigos apaixonados por esportes, saúde e bem-estar: Pedro, Sofia e Marcos. Com o desejo de promover uma mudança positiva na comunidade de Fitlandia, eles decidiram criar uma academia que fosse muito mais do que apenas um lugar para se exercitar. Queriam construir um espaço acolhedor, motivador e inspirador, onde as pessoas pudessem transformar suas vidas e alcançar seu potencial máximo.</p>
+      <img src="./img/Friends.png" alt="">
+    </div>
+  </article>
+  <article id="planos" class="plano-bg">
+    <div class="planos-titulo">
+      <h2>Nossos Planos</h2>
+    </div>
+    <div class="container planos">
+      <div>
+        <img src="./img/Dumbells1.png" alt="">
+        <ul>
+          <li> Acesso às instalações da academia durante os horários de funcionamento regulares.</li>
+          <li>Uso das áreas de musculação e cardio.</li>
+          <li>Acesso a aulas em grupo regulares, como zumba, yoga ou pilates.</li>
+          <li>Acesso limitado a algumas aulas especializadas.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container hr"></div>
+    <div class="container planos">
+      <div>
+        <ul>
+          <li> Todos os benefícios do Plano Básico.</li>
+          <li>Acesso ilimitado a todas as aulas em grupo, incluindo aulas especializadas.</li>
+          <li>Acesso à piscina e à sauna.</li>
+          <li>Uso de áreas exclusivas, como sala de relaxamento e lounge VIP.</li>
+          <li>Uso de armários privados.</li>
+        </ul>
+        <img src="./img/Dumbells2.png" alt="">
+      </div>
+    </div>
+    <div class="container hr"></div>
+    <div class="container planos">
+      <div>
+        <img src="./img/Dumbells3.png" alt="">
+        <ul>
+          <li> Todos os benefícios do Plano Premium.</li>
+          <li>Acesso a sessões de treinamento personalizado com um instrutor certificado.</li>
+          <li>Elaboração de um programa de treinamento individualizado, adaptado às necessidades e metas específicas do usuário.</li>
+          <li>Acompanhamento personalizado para monitorar o progresso e fazer ajustes no programa.</li>
+        </ul>
+      </div>
+    </div>
+  </article>
+  <article id="contato">
+    <div class="contato-titulo">
+      <h2>Contato</h2>
+    </div>
+    <div class="contato-">
+      <form action="">
+        <label for="">Nome</label>
+        <input type="text" name="" id="">
+        <label for="">Email</label>
+        <input type="email" name="" id="">
+        <label for="">Telefone</label>
+        <input type="number" name="" id="">
+      </form>
+      <img src="./img/Bg-contact.png" alt="">
+    </div>
+  </article>
+  <footer class="footer">
+    <div class="footer-text container">
+      <p>Avenida ficiticia, 479 -Bairro Inventado</p>
+      <p> Cidade Qualquer</p>
+    </div>
+    <div class="footer-icons container">
+      <a href=""><img src="./img/whats.png" alt=""></a>
+      <a href=""><img src="./img/instagram.png" alt=""></a>
+      <a href=""><img src="./img/mail.png" alt=""></a>
+    </div>
+  </footer>
+  </div>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
