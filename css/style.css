@@ -1,44 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-
-
-* {
-  font-family: 'Inter', sans-serif;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
-  color: black;
-}
-
 .container {
-  margin: 0 20%;
+  display: grid;
+  grid-template-columns: 1fr repeat(2, 2fr) 1fr;
+  grid-template-rows: repeat(10, auto);
+  column-gap: 20px;
+
 }
+
+.bg-black {
+  background-color: #000;
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: end;
+}
+
 
 .nav {
-  width: 100%;
-  height: 100px;
+  grid-column-start: 2;
+  grid-column-end: 4;
   display: flex;
-  background-color: black;
+
   justify-content: space-between;
-  align-items: center
+  flex-wrap: wrap;
+}
+
+.logo a {
+  grid-row-start: 1;
+  grid-column-start: 2;
+  grid-column-end: 3;
 }
 
 .nav ul {
+  grid-column-start: 3;
   display: flex;
-  justify-content: center;
+  justify-content: end;
+  align-items: center;
+  grid-row-start: 2;
 }
 
-.nav li {
-  margin-right: 30px;
-}
-
-.nav a {
+.nav li a {
   color: #fff;
-  font-size: 1.2rem;
+  margin-left: 20px;
 }
 
-.nav a:hover {
+.nav li a:hover {
   color: #FEBC59;
   cursor: pointer;
 }
@@ -51,6 +55,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-column-end: end;
 }
 
 .intro p {
@@ -62,13 +69,14 @@
 }
 
 .historia-titulo {
-  width: 100%;
+  grid-row-start: 4;
+  grid-column-start: 2;
+  grid-column-end: 4;
   height: 120px;
   background-color: #000;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 80px;
 }
 
 .historia-titulo h2 {
@@ -86,174 +94,34 @@
   background: #FEBC59;
 }
 
-.historia {
+.sobre {
   display: flex;
-  justify-content: space-between;
-  font-size: 1em;
-  gap: 0 50px;
-}
-
-.historia img {
-  width: 400px;
-  border-radius: 10px;
-}
-
-.planos-titulo {
   width: 100%;
-  background-color: #000;
-  height: 120px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 80px 0;
+  background-color: #fff;
+  grid-row-start: 5;
+  grid-column-start: 2;
+  grid-column-end: 5;
 }
 
-.planos-titulo h2 {
-  color: #FEBC59;
-}
+@media (max-width: 600px) {
 
-.planos-titulo h2::after,
-.planos-titulo h2::before {
-  content: '';
-  display: block;
-  width: 100px;
-  height: 2px;
-  margin: 20px auto;
-  text-align: center;
-  background: #FEBC59;
-}
-
-.plano-bg {
-  background-color: #2D2D2D;
-}
-
-
-.planos div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 0 50px;
-  font-size: 1em;
-  margin-bottom: 80px;
-}
-
-.planos:last-child {
-  background: yellowgreen;
-}
-
-.planos img {
-  width: 400px;
-  border-radius: 10px;
-
-}
-
-.planos ul {
-  width: 50%;
-}
-
-.planos ul li {
-  color: #d3d3d3;
-  font-family: 'Inter', sans-serif;
-  font-size: 0.9em;
-  font-weight: normal;
-  line-height: 1.9em;
-}
-
-.hr {
-  display: block;
-  height: 1px;
-  margin-bottom: 80px;
-  background: rgba(254, 188, 89, 0.20);
-}
-
-.contato-titulo {
-  width: 100%;
-  height: 120px;
-  background-color: #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 80px;
-}
-
-.contato-titulo h2 {
-  color: #FEBC59;
-}
-
-.contato-titulo h2::after,
-.contato-titulo h2::before {
-  content: '';
-  display: block;
-  width: 100px;
-  height: 2px;
-  margin: 20px auto;
-  text-align: center;
-  background: #FEBC59;
-}
-
-
-/* Footer */
-
-.footer {
-  width: 100%;
-  height: 100px;
-  background-color: #000;
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer p {
-  text-align: center;
-  color: #fff;
-}
-
-.footer-icons {
-  display: inline-block;
-  width: 50%;
-}
-
-
-
-
-/* BreakPoints */
-
-
-/* Tablet */
-
-
-/* Smartphone */
-
-@media (max-width: 768px) {
-  .container {
-    margin: 0;
-  }
 
   .nav {
-    flex-direction: column;
-    justify-content: center;
-    padding: 25px 0;
+    background: rebeccapurple;
+    flex-direction: row;
+    grid-column-start: 1;
   }
 
-  .historia {
-    font-size: 0.8em;
-    margin: 0 40px;
-    flex-direction: column;
+  .logo a {
+    grid-column-start: 1;
+    grid-row-start: 2;
+  }
+
+  .nav ul {
+    grid-column-start: 3;
+    display: flex;
+    justify-content: end;
     align-items: center;
   }
 
-  .historia p {
-    margin-bottom: 20px;
-  }
-
-  .planos div {
-    flex-direction: column;
-  }
-
-  .planos div:last-child {
-    background-color: transparent;
-  }
-
-  img {
-    max-width: 300px;
-  }
 }

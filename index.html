@@ -5,31 +5,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>StrongGym</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel=" stylesheet" href="./css/style.css">
 </head>
 
 <body>
+  <main class="container">
+    <nav class="nav .bg-black">
+      <a href="#" class="logo"><img src="./img/Logo.png" alt="Logo StrongGym"></a>
+      <ul>
+        <li><a href="#sobre"> Sobre</a></li>
+        <li> <a href="#planos">Planos</a> </li>
+        <li><a href="#contato"> Contato</a></li>
+      </ul>
+    </nav>
 
-  <nav class="nav ">
-    <a class="container" href="#"><img src="./img/Logo.png" alt="Logo StrongGym"></a>
-    <ul class="container">
-      <li><a href="#sobre"> Sobre</a></li>
-      <li> <a href="#planos">Planos</a> </li>
-      <li><a href="#contato"> Contato</a></li>
-    </ul>
-  </nav>
-  <div class="intro">
-    <p>"Unidos pela força interior, capacitados pelo esforço mútuo, na STRONG GYM transformamos sonhos em realidade."</p>
-  </div>
-  <article id="sobre">
+    <div class="intro">
+      <p>"Unidos pela força interior, capacitados pelo esforço mútuo, na STRONG GYM transformamos sonhos em realidade."</p>
+    </div>
+
     <div class="historia-titulo">
       <h2>Nossa História</h2>
     </div>
-    <div class="historia container">
-      <p>A STRONGGYM foi fundada em 2014 por três amigos apaixonados por esportes, saúde e bem-estar: Pedro, Sofia e Marcos. Com o desejo de promover uma mudança positiva na comunidade de Fitlandia, eles decidiram criar uma academia que fosse muito mais do que apenas um lugar para se exercitar. Queriam construir um espaço acolhedor, motivador e inspirador, onde as pessoas pudessem transformar suas vidas e alcançar seu potencial máximo.</p>
-      <img src="./img/Friends.png" alt="">
-    </div>
-  </article>
+    <article id="sobre" class="sobre">
+      <div class="sobre-teste">
+        <p>A STRONGGYM foi fundada em 2014 por três amigos apaixonados por esportes, saúde e bem-estar: Pedro, Sofia e Marcos. Com o desejo de promover uma mudança positiva na comunidade de Fitlandia, eles decidiram criar uma academia que fosse muito mais do que apenas um lugar para se exercitar. Queriam construir um espaço acolhedor, motivador e inspirador, onde as pessoas pudessem transformar suas vidas e alcançar seu potencial máximo.</p>
+        <img src="./img/Friends.png" alt="">
+      </div>
+    </article>
+  </main>
+  <!--
   <article id="planos" class="plano-bg">
     <div class="planos-titulo">
       <h2>Nossos Planos</h2>
@@ -98,7 +103,8 @@
       <a href=""><img src="./img/mail.png" alt=""></a>
     </div>
   </footer>
-  </div>
+  </div>-->
+
   <script src="./js/script.js"></script>
 </body>
 
