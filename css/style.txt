@@ -2,18 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 
-* {
-  font-family: 'Inter', sans-serif;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
-  color: black;
-}
 
-.container {
-  margin: 0 20%;
-}
 
 .nav {
   width: 100%;
@@ -223,16 +212,37 @@
 
 /* Smartphone */
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .container {
     margin: 0;
   }
 
   .nav {
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     padding: 25px 0;
   }
 
+  .historia {
+    font-size: 0.8em;
+    margin: 0 40px;
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .historia p {
+    margin-bottom: 20px;
+  }
+
+  .planos div {
+    flex-direction: column;
+  }
+
+  .planos div:last-child {
+    background-color: transparent;
+  }
+
+  img {
+    max-width: 300px;
+  }
 }

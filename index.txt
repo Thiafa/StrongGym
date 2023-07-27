@@ -10,13 +10,15 @@
 
 <body>
 
-  <nav class="nav ">
-    <a class="container" href="#"><img src="./img/Logo.png" alt="Logo StrongGym"></a>
-    <ul class="container">
-      <li><a href="#sobre"> Sobre</a></li>
-      <li> <a href="#planos">Planos</a> </li>
-      <li><a href="#contato"> Contato</a></li>
-    </ul>
+  <nav class="nav">
+    <div class="container">
+      <a class="" href="#"><img src="./img/Logo.png" alt="Logo StrongGym"></a>
+      <ul class="">
+        <li><a href="#sobre"> Sobre</a></li>
+        <li> <a href="#planos">Planos</a> </li>
+        <li><a href="#contato"> Contato</a></li>
+      </ul>
+    </div>
   </nav>
   <div class="intro">
     <p>"Unidos pela força interior, capacitados pelo esforço mútuo, na STRONG GYM transformamos sonhos em realidade."</p>
