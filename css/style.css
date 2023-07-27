@@ -134,10 +134,72 @@
   line-height: calc(1em*2);
 }
 
+.contato-conteudo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0;
+  gap: 80px;
+}
+
+.contato-conteudo div {
+  /* border: 1px solid red; */
+}
+
+.contato-conteudo h2 {
+  font-size: 1.3em;
+}
+
+.contato-conteudo form {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contato-conteudo label {
+  font-size: 1em;
+  color: #424242;
+}
+
+.contato-conteudo label {
+  margin-top: 40px;
+}
+
+.contato-conteudo input {
+  width: 100%;
+  height: 50px;
+  border: none;
+  flex-shrink: 0;
+  margin-top: 10px;
+  padding-left: 15px;
+  font-size: 1em;
+  background-color: #D9D9D9;
+  border-radius: 5px;
+  color: #424242;
+}
+
+.contato-conteudo form button {
+  width: 100%;
+  height: 50px;
+  border: none;
+
+  margin-top: 20px;
+  font-size: 1em;
+  background-color: greenyellow;
+  border-radius: 5px;
+  color: #424242;
+}
+
+.contato-conteudo button:hover {
+  background-color: aqua;
+  cursor: pointer;
+}
+
 .end {
   width: 100%;
   height: 300px;
   background-image: url('../img/img-end.png');
+  background-size: cover;
 }
 
 .footer {
