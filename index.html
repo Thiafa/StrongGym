@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/style.css">
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
 </head>
 
 <body>
@@ -94,9 +96,9 @@
             <label for="Email">Email</label>
             <input type="email" name="email" id="email">
             <label for="Telefone">Telefone</label>
-            <input type="number" name="telefone" id="telefone">
+            <input type="tel" name="telefone" id="telefone">
             <label for="Mensagem">Mensagem</label>
-            <input type="text" name="mensagem" id="mensagem">
+            <textarea type="text" name="mensagem" id="mensagem" rows="10" maxlength="500"></textarea>
             <button type="submit" id="btn">Enviar</button>
           </form>
         </div>
