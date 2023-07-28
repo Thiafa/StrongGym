@@ -281,9 +281,11 @@
 
   .contato-conteudo {
     flex-direction: column;
+    gap: 20px;
+
   }
 
   .contato-conteudo form {
-    width: 350px;
+    width: 300px;
   }
 }
